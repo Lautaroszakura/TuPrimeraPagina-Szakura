@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora</title>
+</head>
+<body>
+    <h1>Distribuidora de Alimentos</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li>
+                <a href="/proveedor/">Crear Proveedor</a>
+            </li>
+            <li>
+                <a href="/local/">Crear Local</a>
+            </li>
+            <li>
+                <a href="/producto/">Crear Producto</a>
+            </li>
+            <li>
+                <a href="/buscar/">Buscar Productos</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        {% block contenido %}
+            
+        {% endblock contenido %}
+    </div>
+</body>
+</html>

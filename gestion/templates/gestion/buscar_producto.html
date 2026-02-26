@@ -1,0 +1,9 @@
+{% extends "gestion/base.html" %}
+
+{% block contenido %}
+<h2>Buscar Producto</h2>
+<form method="GET">
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+</form>
+{% endblock %}

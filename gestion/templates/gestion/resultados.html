@@ -1,0 +1,16 @@
+{% extends "gestion/base.html" %}
+
+{% block contenido %}
+<h2>Resultados de la búsqueda</h2>
+
+{% if productos %}
+    <ul>
+    {% for producto in productos %}
+        <li>{{ producto.nombre }} - ${{ producto.precio }} - Stock: {{ producto.stock }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No se encontraron productos</p>
+{% endif %}
+
+{% endblock %}
